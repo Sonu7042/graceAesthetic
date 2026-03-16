@@ -222,7 +222,7 @@ const Footer = () => {
         <div className="lg:col-span-1 flex flex-col items-center lg:items-start lg:ml-48 text-start gap-y-2 text-sm">
           {[
             { name: "Home", path: "/" },
-            { name: "About", path: "/about" },
+            // { name: "About", path: "/about" },
             { name: "Projects", path: "/projects" },
             { name: "Blogs", path: "/blog" },
           ].map((item) => (
