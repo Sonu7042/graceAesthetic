@@ -1,10 +1,10 @@
 import { useEffect, useRef } from 'react';
 import HarmonyOne from "../assets/images/image30.jpeg";
 import HarmonyTwo from "../assets/images/Harmony_second.jpg";
-import Wellbeing from "../assets/images/Wellbeing.jpg";
+import Wellbeing from "../assets/images/Wellbeing.jpeg";
 import rooted from "../assets/images/rooted.jpg";
 import Enduring from "../assets/images/Enduring.jpg";
-import Thoughtful from "../assets/images/images50.jpg";
+import Thoughtful from "../assets/images/images50.jpeg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import AOS from 'aos';
@@ -20,7 +20,7 @@ const GallerySection = () => {
     if (el && !wrappersRef.current.includes(el)) {
       wrappersRef.current.push(el);
     }
-  };
+  };     
 
   const leftItems = useRef([]);
   const rightItems = useRef([]);

@@ -5,9 +5,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Section, Container, Grid, Button } from "../component/ui";
 import video2 from '../assets/ishaadriilight.mp4'
 import img from '../assets/3dImg.jpg'
-import img1 from '../assets/gsapScrolling/3d-inter-one.jpg'
+import img1 from '../assets/gsapScrolling/3d-inter-one.jpeg'
 import img2 from '../assets/gsapScrolling/3d-inter-two.jpg'
-import img3 from '../assets/gsapScrolling/3d-inter-three.jpg'
+import img3 from '../assets/gsapScrolling/3d-inter-three.jpeg'
 import img4 from '../assets/gsapScrolling/3d-inter-four.jpg'
 import {
     Dribbble,
@@ -218,13 +218,16 @@ const ProjectDetail = () => {
             </Section>
 
             {/* 5. Scenic House Section */}
-            <section className="relative h-[80vh] overflow-hidden">
-                <img
-                    src={img}
-                    className="w-full h-full object-cover"
-                    alt="Scenic House"
+            <section className="relative h-full overflow-hidden">
+                <video
+                    src={video2}
+                    autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 flex items-center justify-center">
+                {/* <div className="absolute inset-0 flex items-center justify-center">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
@@ -232,7 +235,7 @@ const ProjectDetail = () => {
                     >
                         <div className="w-0 h-0 border-t-8 border-t-transparent border-l-12 border-l-white border-b-8 border-b-transparent translate-x-0.5"></div>
                     </motion.div>
-                </div>
+                </div> */}
             </section>
 
 
