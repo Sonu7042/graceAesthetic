@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Section, Container, Grid, Button } from "../component/ui";
 import video2 from '../assets/ishaadriilight.mp4'
+import video3 from '../assets/Ishaadri_home2.mp4'
 import img from '../assets/3dImg.jpg'
 import img1 from '../assets/gsapScrolling/3d-inter-one.jpeg'
 import img2 from '../assets/gsapScrolling/3d-inter-two.jpg'
@@ -76,7 +77,7 @@ const ProjectDetail = () => {
                  className="w-full h-full object-cover scale-105"
                /> */}
                     <video
-                        src={video2}
+                        src={video3}
                         autoPlay
                         muted
                         loop

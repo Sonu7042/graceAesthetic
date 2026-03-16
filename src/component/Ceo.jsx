@@ -7,15 +7,6 @@ import ceoHead4 from "../assets/ownerimg/thankan.jpeg"
 
 const leaderSections = [
     {
-        tag: "JMD and CEO",
-        title: "Mr. Devender Tomar",
-        description: [
-            "With 22+ years of experience across leading organizations like MRG, Signature Global, Unicon, Airtel, and Godrej Securities, Mr. Devender Tomar brings strategic expertise to real estate consulting. At Team RKI, he delivers transparent, client-focused guidance, driven by his core philosophy  “Service Above All.”"
-        ],
-        image: ceoHead,
-        reverse: false
-    }, 
-    {
         tag: " Co Founder and Co chairman",
         title: "Ms. Neeru Tomar",
         description: [
@@ -30,16 +21,25 @@ const leaderSections = [
         description: [
             "With over 13 years of diversified experience across Sales, Marketing, SaaS, and Logistics, Ms. Pratibha Thakran brings a wealth of knowledge and expertise to the real estate industry. Having worked with leading organizations such as Zomato, Loconav, Signature Global, and Bata, he has successfully built a career defined by strategic growth, client-centric solutions, and operational excellence. ",
         ],
-        image: ceoHead4,
+        image: "https://static.vecteezy.com/system/resources/thumbnails/022/014/184/small/user-icon-member-login-isolated-vector.jpg",
         reverse: false
     },
+    {
+        tag: "JMD and CEO",
+        title: "Mr. Devender Tomar",
+        description: [
+            "With 22+ years of experience across leading organizations like MRG, Signature Global, Unicon, Airtel, and Godrej Securities, Mr. Devender Tomar brings strategic expertise to real estate consulting. At Team RKI, he delivers transparent, client-focused guidance, driven by his core philosophy  “Service Above All.”"
+        ],
+        image: ceoHead,
+        reverse: false
+    }, 
     {
         tag: "MD and COO",
         title: "Mr. Pradeep Kumar",
         description: [
             "Placing environmental respect and human comfort at the center of every project. We create spaces that are as functional as they are beautiful.",
         ],
-        image: "https://img.freepik.com/free-photo/portrait-confident-young-businessman-with-his-arms-crossed_23-2148176206.jpg?semt=ais_hybrid&w=740&q=80",
+        image: "https://static.vecteezy.com/system/resources/thumbnails/022/014/184/small/user-icon-member-login-isolated-vector.jpg",
         reverse: true
     }
 ];
@@ -112,7 +112,7 @@ const Section = ({ section, index, total }) => {
                                     opacity: imageOpacity,
                                     willChange: "transform, opacity"
                                 }}
-                                className="hidden lg:block relative overflow-hidden h-[70vh] rounded-sm luxury-shadow"
+                                className="hidden lg:block bg-white relative overflow-hidden h-[70vh] rounded-sm luxury-shadow"
                             >
                                 <motion.img
                                     style={{ scale: imageScale, willChange: "transform" }}

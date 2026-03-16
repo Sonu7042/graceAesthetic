@@ -134,7 +134,7 @@ const AboutPage = () => {
 
 
                 {/* TEAM GRID */}
-                <div className="max-w-7xl mx-auto w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-12">
+                {/* <div className="max-w-7xl mx-auto w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-12">
                     {teamMembers.map((member, index) => (
                         <motion.div
                             key={index}
@@ -161,7 +161,7 @@ const AboutPage = () => {
                             </h4>
                         </motion.div>
                     ))}
-                </div>
+                </div> */}
 
             </section>
 

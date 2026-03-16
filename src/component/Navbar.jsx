@@ -38,7 +38,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    // { name: "About us", path: "/about" },
+    { name: "About us", path: "/about" },
     { name: "Blog", path: "/blog" },
   ];
 
@@ -136,7 +136,7 @@ const Navbar = () => {
 
             <button
               onClick={() => setContactOpen(true)}
-              className="text-xs uppercase tracking-[0.2em] font-medium hover:text-primary transition"
+              className="text-xs uppercase tracking-[0.2em] font-medium hover:text-primary transition cursor-pointer"
             >
               Contact
             </button>
@@ -203,7 +203,7 @@ const Navbar = () => {
 
                 <button
                   onClick={() => { setContactOpen(true); setMobileMenuOpen(false); }}
-                  className="w-full py-3 border border-primary/30 text-primary text-[10px] uppercase tracking-[0.2em] hover:bg-primary hover:text-white transition-all"
+                  className="w-full py-3 border border-primary/30 text-primary text-[10px] uppercase tracking-[0.2em] hover:bg-primary hover:text-white transition-all cursor-pointer"
                 >
                   Contact
                 </button>
