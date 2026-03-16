@@ -25,7 +25,7 @@ import beyond5 from "../assets/billoraImgs1/hut_New.png";
 import beyond6 from "../assets/billoraImgs1/garden with chair.jpg";
 import beyond7 from "../assets/billoraImgs1/beyond7 1.png";
 import beyond8 from "../assets/billoraImgs1/summer-landscape-with-fir-forest-in-mountains-2026-01-08-07-13-55-utc.jpg";
-import beyond9 from "../assets/billoraImgs1/balkani.png";
+import beyond9 from "../assets/billoraImgs1/balkani.jpg";
 import beyond10 from "../assets/billoraImgs1/red_Panda.jpeg";
 import beyond01 from "../assets/billoraImgs1/beyond_1.png";
 import beyond02 from "../assets/billoraImgs1/beyond_02.png";
