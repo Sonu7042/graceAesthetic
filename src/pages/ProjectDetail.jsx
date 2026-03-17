@@ -69,7 +69,7 @@ const ProjectDetail = () => {
     return (
         <main className="bg-luxury-light">
             {/* 1. Project Hero (Using existing if available or new custom) */}
-            <section className="relative h-screen overflow-hidden">
+            <section className="relative w-full lg:mt-0 md:mt-0 mt-16 aspect-video md:h-[100svh] md:aspect-auto overflow-hidden">
                 <div className="absolute inset-0">
                     {/* <img
                  src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=2070"
@@ -140,40 +140,43 @@ const ProjectDetail = () => {
 
             {/* 3. Visual Journey (Horizontal Scroll) */}
             <div ref={triggerRef}>
-                <div className="h-screen overflow-hidden flex flex-col justify-center">
-                    <h2 className="tracking-[0.6em] 
-                      sm:tracking-[1rem] 
-                      md:tracking-[1.6rem] 
-                      lg:tracking-[2.25rem] 
-                      text-xl 
-                      sm:text-2xl 
-                      md:text-3xl 
-                      lg:text-[37px] 
-                    text-gray-500 uppercase text-center ">
-                        {/* Use Inside ISHAADRII */}
-                    </h2>
-                    <div ref={horizontalRef} className="flex items-end gap-4 md:gap-8 px-[5vw] md:px-[10vw] relative w-max">
-                        {[
-                            img1,
-                            img2,
-                            img3,
-                            img4
-                        ].map((img, i) => (
-                            <div
-                                key={i}
-                                className={`w-[85vw] md:w-[45vw] lg:w-[40vw]
-                                               h-[50vh]
-                                               ${i % 2 !== 0 ? "md:h-[60vh]" : "md:h-[80vh]"}
-                                               shrink-0 relative group rounded-sm overflow-hidden
-                                             `}
-                            >
-                                <img src={img} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt={`Journey ${i}`} />
-                                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500"></div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
+  <div className="h-[100svh] md:h-screen overflow-hidden flex flex-col justify-center">
+
+    <h2 className="tracking-[0.6em] sm:tracking-[1rem] md:tracking-[1.6rem] lg:tracking-[2.25rem] 
+      text-xl sm:text-2xl md:text-3xl lg:text-[37px] 
+      text-gray-500 uppercase text-center">
+    </h2>
+
+    <div 
+      ref={horizontalRef} 
+      className="flex items-end gap-4 md:gap-8 px-[5vw] md:px-[10vw] relative min-w-full transform-gpu will-change-transform"
+    >
+
+      {[img1, img2, img3, img4].map((img, i) => (
+        <div
+  key={i}
+  className={`w-[clamp(260px,40vw,500px)]
+    ${i % 2 === 0 
+      ? "h-[55vh] md:h-[70vh] lg:h-[80vh]" 
+      : "h-[40vh] md:h-[55vh] lg:h-[65vh] mt-10 md:mt-16"
+    }
+    shrink-0 relative group rounded-sm overflow-hidden`}
+>
+
+          <img 
+            src={img} 
+            loading="lazy"
+            className="w-full h-full object-cover transform-gpu will-change-transform transition-transform duration-500 group-hover:scale-105" 
+          />
+
+          <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500"></div>
+
+        </div>
+      ))}
+
+    </div>
+  </div>
+</div>
 
 
 
@@ -194,27 +197,29 @@ const ProjectDetail = () => {
                             Project Amenities
                         </h2>
                     </div>
-                    <Grid cols={4} gap={8}>
-                        {amenities.map((item, i) => (
-                            <motion.div
-                                key={i}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: i * 0.1 }}
-                                className="group p-8 border border-luxury-dark/5 hover:border-primary/30 transition-all duration-500 text-center relative overflow-hidden"
-                            >
-                                <div className="absolute top-0 left-0 w-1 h-0 bg-primary group-hover:h-full transition-all duration-500"></div>
-                                <item.icon
-                                    className="w-8 h-8 mx-auto mb-6 text-primary group-hover:scale-110 transition-transform duration-500"
-                                    strokeWidth={1.5}
-                                />
-                                <h3 className="text-xs uppercase tracking-[0.2em] font-bold text-luxury-dark/80 mb-2 truncate">
-                                    {item.title}
-                                </h3>
-                            </motion.div>
-                        ))}
-                    </Grid>
+                    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+  {amenities.map((item, i) => (
+    <motion.div
+      key={i}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: i * 0.1 }}
+      className="group p-6 md:p-8 border border-luxury-dark/5 hover:border-primary/30 transition-all duration-500 text-center relative overflow-hidden"
+    >
+      <div className="absolute top-0 left-0 w-1 h-0 bg-primary group-hover:h-full transition-all duration-500"></div>
+
+      <item.icon
+        className="w-7 h-7 md:w-8 md:h-8 mx-auto mb-4 md:mb-6 text-primary group-hover:scale-110 transition-transform duration-500"
+        strokeWidth={1.5}
+      />
+
+      <h3 className="text-[10px] md:text-xs uppercase tracking-[0.2em] font-bold text-luxury-dark/80 mb-2">
+        {item.title}
+      </h3>
+    </motion.div>
+  ))}
+</div>
                 </Container>
             </Section>
 
