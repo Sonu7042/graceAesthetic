@@ -26,7 +26,7 @@ const BlogDetailPage = () => {
         .slice(0, 3);
 
     return (
-        <div className="bg-white min-h-screen">
+        <div className="bg-white min-h-screen p-4">
             {/* Hero Section */}
             <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
                 <div
