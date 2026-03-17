@@ -164,8 +164,8 @@ const Footer = () => {
               graceaestheticofficial@gmail.com
             </a>
 
-            <a href="tel:+919910346123" className="block hover:text-black">
-              Call: +91 99103 46123
+            <a href="tel:+919667376123" className="block hover:text-black">
+              Call: +919667376123
             </a>
           </div>
         </div>

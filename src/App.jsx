@@ -10,6 +10,7 @@ import BlogDetailPage from './pages/BlogDetailPage.jsx';
 import Lenis from "lenis";
 import ScrollToTop from './common/ScrollToTop.jsx';
 import Billora from './pages/BilloraPage.jsx';
+import CountdownPage from './component/CountdownPage.jsx';
 
 function App() {
 
@@ -48,10 +49,11 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/projects" element={<ProjectDetail />} />
+            <Route path="/projects" element={<CountdownPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:slug" element={<BlogDetailPage />} />
             <Route path="/billora" element={<Billora />} />
+
 
           </Routes>
         </main>
