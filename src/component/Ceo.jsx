@@ -9,16 +9,16 @@ const leaderSections = [
     tag: "Co Founder and Co chairman",
     title: "Ms. Neeru Tomar",
     description: [
-      "With 19 years of experience in Sales, E-Commerce, and Operations, Mrs. Neeru Tomar has worked with global brands like American Express, Citi Group, Aon Hewitt, and Koziva UK. She drives operational efficiency, revenue growth, and customer excellence by combining strategic insight with proven best practices to build sustainable, high-performing businesses."
+      // "With 19 years of experience in Sales, E-Commerce, and Operations, Mrs. Neeru Tomar has worked with global brands like American Express, Citi Group, Aon Hewitt, and Koziva UK. She drives operational efficiency, revenue growth, and customer excellence by combining strategic insight with proven best practices to build sustainable, high-performing businesses."
     ],
     image: ceoHead2,
     reverse: true
   },
   {
-    tag: "Founder and Chairman",
+    tag: "Founder and Chairman",   
     title: "Ms. Pratibha Thakran",
     description: [
-      "With over 13 years of diversified experience across Sales, Marketing, SaaS, and Logistics, Ms. Pratibha Thakran brings a wealth of knowledge and expertise to the real estate industry. Having worked with leading organizations such as Zomato, Loconav, Signature Global, and Bata, she has successfully built a career defined by strategic growth, client-centric solutions, and operational excellence."
+      // "With over 13 years of diversified experience across Sales, Marketing, SaaS, and Logistics, Ms. Pratibha Thakran brings a wealth of knowledge and expertise to the real estate industry. Having worked with leading organizations such as Zomato, Loconav, Signature Global, and Bata, she has successfully built a career defined by strategic growth, client-centric solutions, and operational excellence."
     ],
     image:
       "https://static.vecteezy.com/system/resources/thumbnails/022/014/184/small/user-icon-member-login-isolated-vector.jpg",
@@ -28,7 +28,7 @@ const leaderSections = [
     tag: "JMD and CEO",
     title: "Mr. Devender Tomar",
     description: [
-      "With 22+ years of experience across leading organizations like MRG, Signature Global, Unicon, Airtel, and Godrej Securities, Mr. Devender Tomar brings strategic expertise to real estate consulting. At Team RKI, he delivers transparent, client-focused guidance, driven by his core philosophy “Service Above All.”"
+      // "With 22+ years of experience across leading organizations like MRG, Signature Global, Unicon, Airtel, and Godrej Securities, Mr. Devender Tomar brings strategic expertise to real estate consulting. At Team RKI, he delivers transparent, client-focused guidance, driven by his core philosophy “Service Above All.”"
     ],
     image: ceoHead,
     reverse: true
@@ -37,7 +37,7 @@ const leaderSections = [
     tag: "COO",
     title: "Mr. Pardeep Kumar",
     description: [
-      "A highly experienced professional in the real estate development sector, with strong expertise in managing end-to-end operations, large-scale project execution, and strategic business growth. Known for driving efficiency and ensuring timely delivery of projects, he has successfully led cross-functional teams, optimized resources, and built strong client relationships. With deep industry knowledge and a results-oriented approach, he has consistently contributed to organizational growth, operational excellence, and enhanced customer satisfaction."
+      // "A highly experienced professional in the real estate development sector, with strong expertise in managing end-to-end operations, large-scale project execution, and strategic business growth. Known for driving efficiency and ensuring timely delivery of projects, he has successfully led cross-functional teams, optimized resources, and built strong client relationships. With deep industry knowledge and a results-oriented approach, he has consistently contributed to organizational growth, operational excellence, and enhanced customer satisfaction."
     ],
     image:
       "https://static.vecteezy.com/system/resources/thumbnails/022/014/184/small/user-icon-member-login-isolated-vector.jpg",
