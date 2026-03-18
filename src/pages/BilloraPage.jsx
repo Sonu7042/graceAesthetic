@@ -180,7 +180,7 @@ const BilloraPage = () => {
                 data-aos="fade-right"
                 className="md:w-2/3 h-[300px] md:h-[455px]"
               >
-                <img src={beyond9} className="w-full h-full object-cover" />
+                <img src={"https://images.trvl-media.com/lodging/123000000/122630000/122628900/122628807/72c7b2ef.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill"} className="w-full h-full object-cover" />
               </div>
               <div
                 data-aos="fade-left"
