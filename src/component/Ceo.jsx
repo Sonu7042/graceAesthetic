@@ -31,8 +31,18 @@ const leaderSections = [
       "With 22+ years of experience across leading organizations like MRG, Signature Global, Unicon, Airtel, and Godrej Securities, Mr. Devender Tomar brings strategic expertise to real estate consulting. At Team RKI, he delivers transparent, client-focused guidance, driven by his core philosophy “Service Above All.”"
     ],
     image: ceoHead,
+    reverse: true
+  },
+  {
+    tag: "COO",
+    title: "Mr. Pardeep Kumar",
+    description: [
+      "A highly experienced professional in the real estate development sector, with strong expertise in managing end-to-end operations, large-scale project execution, and strategic business growth. Known for driving efficiency and ensuring timely delivery of projects, he has successfully led cross-functional teams, optimized resources, and built strong client relationships. With deep industry knowledge and a results-oriented approach, he has consistently contributed to organizational growth, operational excellence, and enhanced customer satisfaction."
+    ],
+    image:
+      "https://static.vecteezy.com/system/resources/thumbnails/022/014/184/small/user-icon-member-login-isolated-vector.jpg",
     reverse: false
-  }
+  },
 ];
 
 const Section = ({ section, index }) => {
