@@ -49,7 +49,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/projects" element={<CountdownPage />} />
+            <Route path="/projects" element={<ProjectDetail />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:slug" element={<BlogDetailPage />} />
             <Route path="/billora" element={<Billora />} />
