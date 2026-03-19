@@ -45,8 +45,8 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed w-full z-50 transition-all text-primary duration-500 backdrop-blur-lg ${showNav ? "translate-y-0" : "-translate-y-full"
-          } ${isScrolled ? "bg-black/20" : "bg-transparent"}`}
+        className={`fixed w-full z-50 transition-all text-white duration-500 backdrop-blur-lg ${showNav ? "translate-y-0" : "-translate-y-full"
+          } ${isScrolled ? "bg-black/50" : "bg-transparent"}`}
       >
         <div className="container-custom flex justify-between items-center mx-auto px-4">
           <Link to="/">
@@ -77,19 +77,19 @@ const Navbar = () => {
               </div>
 
               {/* FIRST LEVEL */}
-              <div className="absolute top-full left-0 mt-7 w-56 backdrop-blur-lg bg-black/20 text-primary rounded-xs shadow-xl opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300">
+              <div className="absolute top-full left-0 mt-7 w-56 backdrop-blur-lg bg-black/50 text-primary rounded-xs shadow-xl opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300">
 
                 {/* Delivered */}
                 <div className="relative group/delivered">
-                  <div className="px-4 py-3  text-xs uppercase tracking-widest hover:bg-white/10 cursor-pointer flex justify-between items-center group-hover/delivered:text-white">
+                  <div className="px-4 py-3 text-white text-xs uppercase tracking-widest hover:bg-white/10 cursor-pointer flex justify-between items-center group-hover/delivered:text-white">
                     Delivered
                   </div>
 
                   {/* SECOND LEVEL */}
-                  <div className="max-h-0 overflow-hidden group-hover/delivered:max-h-40 transition-all duration-500 ease-in-out bg-black/20 backdrop-blur-lg">
+                  <div className="max-h-0 text-white overflow-hidden group-hover/delivered:max-h-40 transition-all duration-500 ease-in-out bg-black/20 backdrop-blur-lg">
                     <Link
                       to="/billora"
-                      className="block px-8 py-2 text-xs uppercase tracking-widest text-primary/80 hover:text-primary hover:bg-white/10 transition"
+                      className="block px-8 py-2 text-white text-xs uppercase tracking-widest text-primary/80 hover:text-primary hover:bg-white/10 transition"
                     >
                       Billora
                     </Link>
@@ -97,7 +97,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Upcoming */}
-                <div className="relative group/upcoming border-t border-white/10">
+                <div className="relative text-white group/upcoming border-t border-white/10">
                   <div className="px-4 py-3 text-xs uppercase tracking-widest hover:bg-white/10 cursor-pointer flex justify-between items-center group-hover/upcoming:text-white">
                     Upcoming
                   </div>
@@ -106,25 +106,25 @@ const Navbar = () => {
                   <div className="max-h-0 rounded-xs overflow-hidden group-hover/upcoming:max-h-60 transition-all duration-500 ease-in-out bg-black/20 backdrop-blur-lg">
                     <Link
                       to="/projects"
-                      className="block px-8 py-2 text-xs uppercase tracking-widest text-primary/80 hover:text-primary hover:bg-white/10 transition"
+                      className="block px-8 text-white py-2 text-xs uppercase tracking-widest text-primary/80 hover:text-primary hover:bg-white/10 transition"
                     >
                       Ishaadrii
                     </Link>
                     <Link
                       to="#"
-                      className="block px-8 py-2 text-xs uppercase tracking-widest text-primary/80 hover:text-primary hover:bg-white/10 transition"
+                      className="block px-8 py-2 text-white text-xs uppercase tracking-widest text-primary/80 hover:text-primary hover:bg-white/10 transition"
                     >
                       Project2
                     </Link>
                     <Link
                       to="#"
-                      className="block px-8 py-2 text-xs uppercase tracking-widest text-primary/80 hover:text-primary hover:bg-white/10 transition"
+                      className="block px-8 py-2 text-white text-xs uppercase tracking-widest text-primary/80 hover:text-primary hover:bg-white/10 transition"
                     >
                       Project3
                     </Link>
                     <Link
                       to="#"
-                      className="block px-8 py-2 text-xs uppercase tracking-widest text-primary/80 hover:text-primary hover:bg-white/10 transition"
+                      className="block px-8 py-2 text-white text-xs uppercase tracking-widest text-primary/80 hover:text-primary hover:bg-white/10 transition"
                     >
                       Project4
                     </Link>
