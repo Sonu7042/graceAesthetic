@@ -3,6 +3,8 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 
 import ceoHead from "../assets/ownerimg/1.jpg";
 import ceoHead2 from "../assets/ownerimg/2.jpeg";
+import ceoHead3 from "../assets/ownerimg/grace_parthiba_New.jpg";
+import ceoHead4 from "../assets/ownerimg/grace_pradeep_New.jpg";
 
 const leaderSections = [
   {
@@ -15,13 +17,12 @@ const leaderSections = [
     reverse: true
   },
   {
-    tag: "Founder and Chairman",
+    tag: "Founder and Chairman",   
     title: "Ms. Pratibha Thakran",
     description: [
-      "With over 13 years of diversified experience across Sales, Marketing, SaaS, and Logistics, Ms. Pratibha Thakran brings a wealth of knowledge and expertise to the real estate industry. Having worked with leading organizations such as Zomato, Loconav, Signature Global, and Bata, she has successfully built a career defined by strategic growth, client-centric solutions, and operational excellence."
+      // "With over 13 years of diversified experience across Sales, Marketing, SaaS, and Logistics, Ms. Pratibha Thakran brings a wealth of knowledge and expertise to the real estate industry. Having worked with leading organizations such as Zomato, Loconav, Signature Global, and Bata, she has successfully built a career defined by strategic growth, client-centric solutions, and operational excellence."
     ],
-    image:
-      "https://static.vecteezy.com/system/resources/thumbnails/022/014/184/small/user-icon-member-login-isolated-vector.jpg",
+    image: ceoHead3,
     reverse: false
   },
   {
@@ -31,8 +32,17 @@ const leaderSections = [
       "With 22+ years of experience across leading organizations like MRG, Signature Global, Unicon, Airtel, and Godrej Securities, Mr. Devender Tomar brings strategic expertise to real estate consulting. At Team RKI, he delivers transparent, client-focused guidance, driven by his core philosophy “Service Above All.”"
     ],
     image: ceoHead,
+    reverse: true
+  },
+  {
+    tag: "COO",
+    title: "Mr. Pardeep Kumar",
+    description: [
+      // "A highly experienced professional in the real estate development sector, with strong expertise in managing end-to-end operations, large-scale project execution, and strategic business growth. Known for driving efficiency and ensuring timely delivery of projects, he has successfully led cross-functional teams, optimized resources, and built strong client relationships. With deep industry knowledge and a results-oriented approach, he has consistently contributed to organizational growth, operational excellence, and enhanced customer satisfaction."
+    ],
+    image: ceoHead4,
     reverse: false
-  }
+  },
 ];
 
 const Section = ({ section, index }) => {
