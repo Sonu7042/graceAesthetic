@@ -11,16 +11,29 @@ import img2 from '../assets/gsapScrolling/3d-inter-two.jpg'
 import img3 from '../assets/gsapScrolling/3d-inter-three.jpeg'
 import img4 from '../assets/gsapScrolling/3d-inter-four.jpg'
 import {
-    Dribbble,
-    Wifi,
-    Coffee,
-    ShieldCheck,
-    Car,
-    Waves,
-    ShoppingCart,
-    TreePine,
-    ArrowRight,
+  Building2,
+  Dumbbell,
+  Waves,
+  Utensils,
+  Trees,
+  ShieldCheck,
+  Baby,
+  Table,
+  BadgeCheck,
+  UserCheck,
+  Sparkles,
+  Tent,
+  PartyPopper,
+  Briefcase,
+  BatteryCharging,
+  Users,
+  Scissors,
+  Leaf,
+  Landmark,
+  Accessibility,
+  HeartPulse,
 } from "lucide-react";
+import AmenitiesSection from "./AmenitiesSection";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -55,18 +68,34 @@ const ProjectDetail = () => {
         return () => ctx.revert();
     }, []);
 
-    const amenities = [
-        { icon: Wifi, title: "High Speed Wifi", desc: "Stay connected always" },
-        { icon: Car, title: "Private Parking", desc: "Safe and secure" },
-        { icon: ShieldCheck, title: "24/7 Security", desc: "Total peace of mind" },
-        { icon: Coffee, title: "Cafeteria", desc: "Fresh organic coffee" },
-        { icon: Waves, title: "Swimming Pool", desc: "Infinity pool views" },
-        { icon: ShoppingCart, title: "Mini Market", desc: "Daily essentials" },
-        { icon: Dribbble, title: "Sports Area", desc: "Stay fit and active" },
-        { icon: TreePine, title: "Zen Garden", desc: "Peaceful retreats" },
-    ];
+   const amenities = [
+  { icon: Building2, title: "Luxury Clubhouse" },
+  { icon: Dumbbell, title: "Gym" },
+  { icon: Waves, title: "Infinity Pool" },
+  { icon: Utensils, title: "Restaurant" },
+  { icon: Trees, title: "Acres of Greenery" },
 
+  { icon: ShieldCheck, title: "2-Tier Security" },
+  { icon: Baby, title: "Kids Play Area" },
+  { icon: Table, title: "Table Tennis" },
+  { icon: BadgeCheck, title: "Badminton Courts" },
+  { icon: UserCheck, title: "Concierge" },
+
+  { icon: Sparkles, title: "Spiritual Haven" },
+  { icon: Tent, title: "Gazebo" },
+  { icon: PartyPopper, title: "Banquet Hall" },
+  { icon: Briefcase, title: "Business Center" },
+  { icon: BatteryCharging, title: "24/7 Power Backup" },
+
+  { icon: Users, title: "Dedicated Helping Staff" },
+  { icon: Scissors, title: "Luxury Salon & Spa" },
+  { icon: Leaf, title: "Organic Farm" },
+  { icon: Landmark, title: "Temple" },
+  { icon: Accessibility, title: "Wheelchair Friendly" },
+  { icon: HeartPulse, title: "Medical Room" },
+];
     return (
+        <>
         <main className="bg-luxury-light">
             {/* 1. Project Hero (Using existing if available or new custom) */}
             <section className="relative w-full lg:mt-0 md:mt-0 mt-16 aspect-video md:h-[100svh] md:aspect-auto overflow-hidden">
@@ -246,6 +275,12 @@ const ProjectDetail = () => {
 
 
         </main>
+
+        
+       {/* <AmenitiesSection /> */}
+       </>
+
+
     );
 };
 

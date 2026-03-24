@@ -110,7 +110,7 @@ const Navbar = () => {
                     >
                       Ishaadrii
                     </Link>
-                    <Link
+                    {/* <Link
                       to="#"
                       className="block px-8 py-2 text-white text-xs uppercase tracking-widest text-primary/80 hover:text-primary hover:bg-white/10 transition"
                     >
@@ -127,7 +127,7 @@ const Navbar = () => {
                       className="block px-8 py-2 text-white text-xs uppercase tracking-widest text-primary/80 hover:text-primary hover:bg-white/10 transition"
                     >
                       Project4
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
 
