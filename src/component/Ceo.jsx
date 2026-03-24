@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 
-import ceoHead from "../assets/ownerimg/1.jpg";
+import ceoHead from "../assets/ownerimg/11.png";
 import ceoHead2 from "../assets/ownerimg/2.jpeg";
 import ceoHead3 from "../assets/ownerimg/grace_parthiba_New.jpg";
 import ceoHead4 from "../assets/ownerimg/grace_pradeep_New.jpg";
