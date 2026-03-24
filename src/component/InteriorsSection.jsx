@@ -37,11 +37,11 @@ const InteriorsSection = () => {
   return (
     <section id="aesthetics" className="bg-luxury-dark text-white">
       {interiors.map((item, idx) => (
-        <div key={idx} className="relative h-[80vh] min-h-[500px] overflow-hidden group">
+        <div key={idx} className="relative h-[50vh] sm:h-[60vh] md:h-[80vh] min-h-[400px] md:min-h-[500px] overflow-hidden group">
           <img
             src={item.image}
             alt={item.title}
-            className="w-full h-full object-cover opacity-60 transition-transform duration-[2s] group-hover:scale-105"
+            className="w-full h-full object-cover object-center opacity-60 transition-transform duration-[2s] group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-luxury-dark via-transparent to-transparent"></div>
 
