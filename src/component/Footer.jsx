@@ -164,7 +164,7 @@ const Footer = () => {
 
         {/* CONTACT */}
         <div>
-          <h4 className="text-sm mb-3 font-semibold">Contact Us</h4>
+          <h4 className="text-sm mb-3 ">Contact Us</h4>
           <p className="text-sm text-luxury-dark/70">For appointments, inquiries, or support, please contact us at:</p>
 
           <div className="text-sm text-luxury-dark/70 space-y-1">
@@ -220,8 +220,8 @@ const Footer = () => {
           {[
             { name: "Home", path: "/" },
             { name: "About", path: "/about" },
-            { name: "Projects", path: "/projects" },
             { name: "Blogs", path: "/blog" },
+            { name: "Projects", path: "/projects" },
           ].map((item) => (
             <Link
               key={item.name}

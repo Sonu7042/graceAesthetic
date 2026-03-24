@@ -25,7 +25,6 @@ function App() {
   //     smoothTouch: false,
   //   });
 
-
   //   let rafId;
 
   //   const raf = (time) => {

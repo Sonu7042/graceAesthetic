@@ -50,13 +50,13 @@ const ProjectDetail = () => {
 
             if (amountToScroll > 0) {
                 gsap.to(horizontalScroll, {
-                    x: -amountToScroll,
+                    x: () => -(horizontalScroll.scrollWidth - window.innerWidth),
                     ease: "none",
                     scrollTrigger: {
                         trigger: triggerRef.current,
                         start: "top top",
-                        end: () => `+=${amountToScroll}`,
-                        scrub: 1,
+                        end: () => `+=${horizontalScroll.scrollWidth - window.innerWidth}`,
+                        scrub: 1.2,
                         pin: true,
                         invalidateOnRefresh: true,
                         anticipatePin: 1,
@@ -168,7 +168,7 @@ const ProjectDetail = () => {
 
 
             {/* 3. Visual Journey (Horizontal Scroll) */}
-            <div ref={triggerRef}>
+            {/* <div ref={triggerRef}>
   <div className="h-[100svh] md:h-screen overflow-hidden flex flex-col justify-center">
 
     <h2 className="tracking-[0.6em] sm:tracking-[1rem] md:tracking-[1.6rem] lg:tracking-[2.25rem] 
@@ -205,7 +205,44 @@ const ProjectDetail = () => {
 
     </div>
   </div>
-</div>
+            </div> */}
+
+            <div ref={triggerRef}>
+                <div className="h-[100svh] overflow-hidden flex flex-col justify-center">
+                    <h2 className="tracking-[0.6em] 
+                      sm:tracking-[1rem] 
+                      md:tracking-[1.6rem] 
+                      lg:tracking-[2.25rem] 
+                      text-xl 
+                      sm:text-2xl 
+                      md:text-3xl 
+                      lg:text-[37px] 
+                    text-gray-500 uppercase text-center ">
+                        {/* Use Inside ISHAADRII */}
+                    </h2>
+                    <div ref={horizontalRef} className="flex items-end gap-4 md:gap-8 px-[5vw] md:px-[10vw] relative w-max transform-gpu will-change-transform">
+                        {[
+                            img1,
+                            img2,
+                            img3,
+                            img4
+                        ].map((img, i) => (
+                            <div
+                                key={i}
+                                className={`w-[85vw] md:w-[45vw] lg:w-[40vw]
+                                               h-[50vh]
+                                               ${i % 2 !== 0 ? "md:h-[60vh]" : "md:h-[80vh]"}
+                                               shrink-0 relative group rounded-sm overflow-hidden
+                                               transform-gpu will-change-transform
+                                             `}
+                            >
+                                <img src={img} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 transform-gpu will-change-transform" alt={`Journey ${i}`} />
+                                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500"></div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
 
 
 

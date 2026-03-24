@@ -17,12 +17,12 @@ const NatureCarousel = () => {
 
       {/* HEADER */}
       <div className="w-[90%] max-w-[1400px] mx-auto mb-8">
-        <h2 className="tracking-[0.6em] 
-          sm:tracking-[1rem] 
+        <h2 className="tracking-[0.3em] 
+          sm:tracking-[0.6em] 
           md:tracking-[1.6rem] 
           lg:tracking-[2.25rem] 
-          text-xl 
-          sm:text-2xl 
+          text-base 
+          sm:text-xl 
           md:text-3xl 
           lg:text-[37px] 
           text-gray-500 uppercase text-center xl:mb-12">
@@ -42,11 +42,11 @@ const NatureCarousel = () => {
           delay: 3000,
           disableOnInteraction: false,
         }}
-        className="w-screen h-full"
+        className="w-full h-full"
       >
         {images.map((img, index) => (
           <SwiperSlide key={index}>
-            <div className="w-screen h-[70vh]">
+            <div className="w-full h-[45vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh]">
               <img
                 src={img}
                 alt={`slide-${index}`}
