@@ -55,7 +55,7 @@ const Navbar = () => {
               className="w-32 object-contain"
               alt="Logo"
             />
-          </Link>
+          </Link>    
 
           {/* DESKTOP MENU */}
           <div className="hidden md:flex space-x-10 items-center">
