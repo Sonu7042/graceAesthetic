@@ -11,6 +11,8 @@ import Lenis from "lenis";
 import ScrollToTop from './common/ScrollToTop.jsx';
 import Billora from './pages/BilloraPage.jsx';
 import CountdownPage from './component/CountdownPage.jsx';
+import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
+import TermsAndConditions from './pages/TermsAndConditions.jsx';
 
 function App() {
 
@@ -53,7 +55,8 @@ function App() {
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:slug" element={<BlogDetailPage />} />
             <Route path="/billora" element={<Billora />} />
-
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
 
           </Routes>
         </main>

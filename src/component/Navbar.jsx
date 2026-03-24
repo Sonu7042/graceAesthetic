@@ -45,7 +45,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed w-full z-50 transition-all text-white duration-500 backdrop-blur-lg ${showNav ? "translate-y-0" : "-translate-y-full"
+        className={`fixed w-full z-50 transition-all text-primary duration-500 backdrop-blur-lg ${showNav ? "translate-y-0" : "-translate-y-full"
           } ${isScrolled ? "bg-black/50" : "bg-transparent"}`}
       >
         <div className="container-custom flex justify-between items-center mx-auto px-4">
@@ -144,7 +144,7 @@ const Navbar = () => {
 
           {/* MOBILE BUTTON */}
           <button
-            className="md:hidden"
+            className="md:hidden text-primary"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X /> : <Menu />}
@@ -158,9 +158,9 @@ const Navbar = () => {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
-              className="absolute top-full right-0 w-full backdrop-blur-lg bg-black/40 text-primary md:hidden border-t border-white/10"
+              className="absolute top-full right-0 w-full backdrop-blur-xs bg-white text-primary md:hidden border-t border-white/10"
             >
-              <div className="flex flex-col p-6 space-y-6">
+              <div className="flex flex-col p-6 space-y-4">
                 <div className="flex flex-col space-y-4">
                   {navLinks.map((link) => (
                     <Link
@@ -175,7 +175,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-white/30">Projects</p>
+                  <p className="text-xs uppercase tracking-[0.2em]">Projects</p>
 
                   {/* Delivered Mobile Accordion */}
                   <details className="group/mobile-delivered">
@@ -194,9 +194,9 @@ const Navbar = () => {
                     </summary>
                     <div className="pl-4 mt-3 space-y-3 border-l border-white/10 ml-1">
                       <Link to="/projects" onClick={() => setMobileMenuOpen(false)} className="block text-xs uppercase tracking-widest text-primary/70">Ishaadrii</Link>
-                      <Link to="#" onClick={() => setMobileMenuOpen(false)} className="block text-xs uppercase tracking-widest text-primary/70">Project2</Link>
+                      {/* <Link to="#" onClick={() => setMobileMenuOpen(false)} className="block text-xs uppercase tracking-widest text-primary/70">Project2</Link>
                       <Link to="#" onClick={() => setMobileMenuOpen(false)} className="block text-xs uppercase tracking-widest text-primary/70">Project3</Link>
-                      <Link to="#" onClick={() => setMobileMenuOpen(false)} className="block text-xs uppercase tracking-widest text-primary/70">Project4</Link>
+                      <Link to="#" onClick={() => setMobileMenuOpen(false)} className="block text-xs uppercase tracking-widest text-primary/70">Project4</Link> */}
                     </div>
                   </details>
                 </div>

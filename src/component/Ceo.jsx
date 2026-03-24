@@ -8,6 +8,15 @@ import ceoHead4 from "../assets/ownerimg/grace_pradeep_New.jpg";
 
 const leaderSections = [
   {
+    tag: "Founder and Chairman",   
+    title: "Ms. Pratibha Thakran",
+    description: [
+      // "With over 13 years of diversified experience across Sales, Marketing, SaaS, and Logistics, Ms. Pratibha Thakran brings a wealth of knowledge and expertise to the real estate industry. Having worked with leading organizations such as Zomato, Loconav, Signature Global, and Bata, she has successfully built a career defined by strategic growth, client-centric solutions, and operational excellence."
+    ],
+    image: ceoHead3,
+    reverse: false
+  },
+  {
     tag: "Co Founder and Co chairman",
     title: "Ms. Neeru Tomar",
     description: [
@@ -16,13 +25,14 @@ const leaderSections = [
     image: ceoHead2,
     reverse: true
   },
+  
   {
-    tag: "Founder and Chairman",   
-    title: "Ms. Pratibha Thakran",
+    tag: "COO",
+    title: "Mr. Pardeep Kumar",
     description: [
-      // "With over 13 years of diversified experience across Sales, Marketing, SaaS, and Logistics, Ms. Pratibha Thakran brings a wealth of knowledge and expertise to the real estate industry. Having worked with leading organizations such as Zomato, Loconav, Signature Global, and Bata, she has successfully built a career defined by strategic growth, client-centric solutions, and operational excellence."
+      // "A highly experienced professional in the real estate development sector, with strong expertise in managing end-to-end operations, large-scale project execution, and strategic business growth. Known for driving efficiency and ensuring timely delivery of projects, he has successfully led cross-functional teams, optimized resources, and built strong client relationships. With deep industry knowledge and a results-oriented approach, he has consistently contributed to organizational growth, operational excellence, and enhanced customer satisfaction."
     ],
-    image: ceoHead3,
+    image: ceoHead4,
     reverse: false
   },
   {
@@ -33,15 +43,6 @@ const leaderSections = [
     ],
     image: ceoHead,
     reverse: true
-  },
-  {
-    tag: "COO",
-    title: "Mr. Pardeep Kumar",
-    description: [
-      // "A highly experienced professional in the real estate development sector, with strong expertise in managing end-to-end operations, large-scale project execution, and strategic business growth. Known for driving efficiency and ensuring timely delivery of projects, he has successfully led cross-functional teams, optimized resources, and built strong client relationships. With deep industry knowledge and a results-oriented approach, he has consistently contributed to organizational growth, operational excellence, and enhanced customer satisfaction."
-    ],
-    image: ceoHead4,
-    reverse: false
   },
 ];
 

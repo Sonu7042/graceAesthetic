@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { CheckCircle2 } from "lucide-react";
 
 const ContactPopup = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
@@ -62,8 +63,9 @@ const ContactPopup = ({ isOpen, onClose }) => {
           setLoading(false);
           setTimeout(() => {
             setMessage("");
+            setIsSuccess(false);
             onClose();
-          }, 2000);
+          }, 3000);
         },
         (error) => {
          setIsSuccess(false);
@@ -88,70 +90,77 @@ const ContactPopup = ({ isOpen, onClose }) => {
         </div>
 
         {/* Form */}
-        <form className="flex flex-col gap-4 p-6" onSubmit={handleSubmit}>
-          <div className="flex flex-col">
-            <label className="text-sm mb-1 font-medium">Name</label>
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              value={formData.name}
-              onChange={onChange}
-              required
-              className="border px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-            />
-          </div>
-
-          <div className="flex flex-col">
-            <label className="text-sm mb-1 font-medium">Email</label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              placeholder="Email"
-              onChange={onChange}
-              required
-              className="border px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-            />
-          </div>
-
-          <div className="flex flex-col">
-            <label className="text-sm mb-1 font-medium">Phone</label>
-            <input
-              type="tel"
-              name="phone"
-            placeholder="Phone (10 digits)"
-              value={formData.phone}
-              onChange={onChange}
-              required
-              className="border px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-            />
-
-            {phoneError && (
-              <span className="text-red-500 text-sm mt-1">
-                {phoneError}
-              </span>
-            )}
-          </div>
-
-          <button
-            type="submit"
-            disabled={loading}
-            className="mt-2 bg-primary text-white py-2 rounded-lg hover:opacity-90 transition disabled:opacity-60"
-          >
-            {loading ? "Sending..." : "Submit"}
-          </button>
-
-           {message && (
-            <p
-              className={`text-sm text-center ${
-                isSuccess ? "text-green-600" : "text-red-600"
-              }`}
-            >
-              {message}
+        {/* Form OR Thank You */}
+        {isSuccess ? (
+          <div className="flex flex-col items-center justify-center p-10 text-center space-y-4">
+            <CheckCircle2 size={60} className="text-green-500" strokeWidth={1.5} />
+            <h3 className="text-2xl font-bold text-gray-800">Thank You!</h3>
+            <p className="text-gray-600">
+              Your form has been successfully submitted. We will be get in touch with you soon!
             </p>
-          )}
-        </form>
+          </div>
+        ) : (
+          <form className="flex flex-col gap-4 p-6" onSubmit={handleSubmit}>
+            <div className="flex flex-col">
+              <label className="text-sm mb-1 font-medium">Name</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                value={formData.name}
+                onChange={onChange}
+                required
+                className="border px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+            </div>
+
+            <div className="flex flex-col">
+              <label className="text-sm mb-1 font-medium">Email</label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                placeholder="Email"
+                onChange={onChange}
+                required
+                className="border px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+            </div>
+
+            <div className="flex flex-col">
+              <label className="text-sm mb-1 font-medium">Phone</label>
+              <input
+                type="tel"
+                name="phone"
+              placeholder="Phone (10 digits)"
+                value={formData.phone}
+                onChange={onChange}
+                required
+                className="border px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+
+              {phoneError && (
+                <span className="text-red-500 text-sm mt-1">
+                  {phoneError}
+                </span>
+              )}
+            </div>
+
+            <button
+              type="submit"
+              disabled={loading}
+              className="mt-2 bg-primary text-white py-2 rounded-lg hover:opacity-90 transition disabled:opacity-60"
+            >
+              {loading ? "Sending..." : "Submit"}
+            </button>
+
+            {message && !isSuccess && (
+              <p className="text-sm text-center text-red-600">
+                {message}
+              </p>
+            )}
+          </form>
+        )}
       </div>
     </div>
   );
