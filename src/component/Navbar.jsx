@@ -179,7 +179,7 @@ const Navbar = () => {
 
                   {/* Delivered Mobile Accordion */}
                   <details className="group/mobile-delivered">
-                    <summary className="list-none text-xs uppercase tracking-[0.2em] flex justify-between items-center cursor-pointer">
+                    <summary className="list-none text-xs uppercase tracking-[0.2em] flex justify-between items-center cursor-pointer pl-2">
                       Delivered <span className="text-[8px] group-open/mobile-delivered:rotate-180 transition-transform">▼</span>
                     </summary>
                     <div className="pl-4 mt-3 space-y-3 border-l border-white/10 ml-1">
@@ -189,7 +189,7 @@ const Navbar = () => {
 
                   {/* Upcoming Mobile Accordion */}
                   <details className="group/mobile-upcoming">
-                    <summary className="list-none text-xs uppercase tracking-[0.2em] flex justify-between items-center cursor-pointer">
+                    <summary className="list-none text-xs uppercase tracking-[0.2em] flex justify-between items-center cursor-pointer pl-2">
                       Upcoming <span className="text-[8px] group-open/mobile-upcoming:rotate-180 transition-transform">▼</span>
                     </summary>
                     <div className="pl-4 mt-3 space-y-3 border-l border-white/10 ml-1">
