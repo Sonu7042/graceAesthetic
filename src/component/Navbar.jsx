@@ -59,7 +59,7 @@ const Navbar = () => {
 
           {/* DESKTOP MENU */}
           <div className="hidden md:flex space-x-10 items-center">
-
+ 
             {navLinks.map((link) => (
               <Link
                 key={link.name}
