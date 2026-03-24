@@ -2,7 +2,7 @@ import React from 'react';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 md:py-24 text-luxury-dark">
+    <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-24 md:py-24 text-luxury-dark">
       <h1 className="text-3xl md:text-5xl mb-6 font-semibold">Privacy Policy – Grace Aesthetic</h1>
       <p className="mb-8 text-luxury-dark/70">Effective Date: 24.03.2026</p>
 

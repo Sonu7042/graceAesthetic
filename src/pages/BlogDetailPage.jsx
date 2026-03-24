@@ -26,7 +26,7 @@ const BlogDetailPage = () => {
         .slice(0, 3);
 
     return (
-        <div className="bg-white min-h-screen ">
+        <div className="bg-white min-h-screen  ">
             {/* Hero Section */}
             <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
                 <div
@@ -55,7 +55,7 @@ const BlogDetailPage = () => {
             </section>
 
             {/* Layout Section: Left Fixed Images, Right Scrolled Content */}
-            <section className="container-custom-blog mx-auto  py-24 md:py-32">
+            <section className="container-custom-blog mx-auto p-4  py-24 md:py-32">
                 <div className="flex flex-col md:flex-row gap-16 md:gap-4 relative">
 
                     {/* Left Column - Fixed-like Sticky Images */}
