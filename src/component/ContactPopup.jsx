@@ -20,15 +20,19 @@ const ContactPopup = ({ isOpen, onClose }) => {
    const onChange = (e) => {
     const { name, value } = e.target;
 
-    // 🆕 Phone validation logic
-    if (name === "phone") {
-      if (!/^\d*$/.test(value)) return; // only digits
-      if (value.length > 10) return;
+   if (name === "phone") {
+  if (!/^\d*$/.test(value)) return;
 
-      setPhoneError(
-        value.length === 10 ? "" : "Phone number must be 10 digits"
-      );
-    }
+  if (value.length === 1 && !/[6-9]/.test(value)) return;
+
+  if (value.length > 10) return;
+
+  if (value.length === 10) {
+    setPhoneError("");
+  } else {
+    setPhoneError("Phone number must be 10 digits");
+  }
+}
 
     setFormData({ ...formData, [name]: value });
   };

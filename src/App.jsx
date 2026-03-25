@@ -50,10 +50,10 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/projects/upcoming/ishaadrii" element={<ProjectDetail />} />
+            <Route path="/projects/ishaadrii" element={<ProjectDetail />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:slug" element={<BlogDetailPage />} />
-            <Route path="/projects/delivered/billora" element={<Billora />} />
+            <Route path="/projects/billora" element={<Billora />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
 

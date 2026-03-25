@@ -9,7 +9,7 @@ import { IoLogoWhatsapp } from "react-icons/io5";
 
 const Footer = () => {
   const location = useLocation();
-  const isIshaadriPage = location.pathname === "/projects/upcoming/ishaadrii";
+  const isIshaadriPage = location.pathname === "/projects/ishaadrii";
   const currentLogo = isIshaadriPage ? logoisd : logograce;
 
   const [formData, setFormData] = useState({
@@ -27,14 +27,19 @@ const Footer = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    if (name === "phone") {
-      if (!/^\d*$/.test(value)) return;
-      if (value.length > 10) return;
+ if (name === "phone") {
+  if (!/^\d*$/.test(value)) return;
 
-      setPhoneError(
-        value.length === 10 ? "" : "Phone number must be 10 digits"
-      );
-    }
+  if (value.length === 1 && !/[6-9]/.test(value)) return;
+
+  if (value.length > 10) return;
+
+  if (value.length === 10) {
+    setPhoneError("");
+  } else {
+    setPhoneError("Phone number must be 10 digits");
+  }
+}
 
     setFormData({ ...formData, [name]: value });
   };
@@ -199,7 +204,7 @@ const Footer = () => {
             <a href="https://www.instagram.com/graceaestheticofficial/" target="_blank" rel="noopener noreferrer" className="text-luxury-dark/70 hover:text-black hover:scale-110 transition-transform">
               <Instagram size={20} strokeWidth={1.5} />
             </a>
-            <a href="https://www.facebook.com/profile.php?id=61588131724997" target="_blank" rel="noopener noreferrer" className="text-luxury-dark/70 hover:text-black hover:scale-110 transition-transform">
+            <a href="https://www.facebook.com/profile.php?id=61588179783847" target="_blank" rel="noopener noreferrer" className="text-luxury-dark/70 hover:text-black hover:scale-110 transition-transform">
               <Facebook size={20} strokeWidth={1.5} />
             </a>
             <a href="https://www.linkedin.com/company/grace-aesthetic" target="_blank" rel="noopener noreferrer" className="text-luxury-dark/70 hover:text-black hover:scale-110 transition-transform">

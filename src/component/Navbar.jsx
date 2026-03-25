@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const location = useLocation();
 
-  const isIshaadriPage = location.pathname === "/projects/upcoming/ishaadrii";
+  const isIshaadriPage = location.pathname === "/projects/ishaadrii";
   const currentLogo = isIshaadriPage ? logoisd : logograce;
 
   useEffect(() => {
@@ -89,7 +89,7 @@ const Navbar = () => {
                   {/* SECOND LEVEL */}
                   <div className="max-h-0 text-primary overflow-hidden group-hover/delivered:max-h-40 transition-all duration-500 ease-in-out bg-black/20 backdrop-blur-lg">
                     <Link
-                      to="/projects/delivered/billora"
+                      to="/projects/billora"
                       className="block px-8 py-2 text-primary text-xs uppercase tracking-widest text-primary/80 hover:text-primary hover:bg-white/10 transition"
                     >
                       Billora
@@ -106,7 +106,7 @@ const Navbar = () => {
                   {/* SECOND LEVEL */}
                   <div className="max-h-0 rounded-xs overflow-hidden group-hover/upcoming:max-h-60 transition-all duration-500 ease-in-out bg-black/20 backdrop-blur-lg">
                     <Link
-                      to="/projects/upcoming/ishaadrii"
+                      to="/projects/ishaadrii"
                       className="block px-8 text-primary py-2 text-xs uppercase tracking-widest text-primary/80 hover:text-primary hover:bg-white/10 transition"
                     >
                       Ishaadrii
@@ -184,7 +184,7 @@ const Navbar = () => {
                       Delivered <span className="text-[8px] group-open/mobile-delivered:rotate-180 transition-transform">▼</span>
                     </summary>
                     <div className="pl-4 mt-3 space-y-3 border-l border-white/10 ml-1">
-                      <Link to="/projects/delivered/billora" onClick={() => setMobileMenuOpen(false)} className="block text-xs uppercase tracking-widest text-primary/70">Billora</Link>
+                      <Link to="/projects/billora" onClick={() => setMobileMenuOpen(false)} className="block text-xs uppercase tracking-widest text-primary/70">Billora</Link>
                     </div>
                   </details>
 
@@ -194,7 +194,7 @@ const Navbar = () => {
                       Upcoming <span className="text-[8px] group-open/mobile-upcoming:rotate-180 transition-transform">▼</span>
                     </summary>
                     <div className="pl-4 mt-3 space-y-3 border-l border-white/10 ml-1">
-                      <Link to="/projects/upcoming/ishaadrii" onClick={() => setMobileMenuOpen(false)} className="block text-xs uppercase tracking-widest text-primary/70">Ishaadrii</Link>
+                      <Link to="/projects/ishaadrii" onClick={() => setMobileMenuOpen(false)} className="block text-xs uppercase tracking-widest text-primary/70">Ishaadrii</Link>
                       {/* <Link to="#" onClick={() => setMobileMenuOpen(false)} className="block text-xs uppercase tracking-widest text-primary/70">Project2</Link>
                       <Link to="#" onClick={() => setMobileMenuOpen(false)} className="block text-xs uppercase tracking-widest text-primary/70">Project3</Link>
                       <Link to="#" onClick={() => setMobileMenuOpen(false)} className="block text-xs uppercase tracking-widest text-primary/70">Project4</Link> */}
