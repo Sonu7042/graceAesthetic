@@ -258,7 +258,7 @@ const Footer = () => {
         href="https://wa.me/919667376123"
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute bottom-6 right-6 lg:bottom-10 lg:right-10 z-50 bg-[#25D366] text-white  rounded-full p-[4px] hover:scale-110 transition-transform flex items-center justify-center cursor-pointer"
+        className="absolute bottom-12 right-6 lg:bottom-10 lg:right-10 z-50 bg-[#25D366] text-white  rounded-full p-[4px] hover:scale-110 transition-transform flex items-center justify-center cursor-pointer"
         aria-label="Chat on WhatsApp"
       >
 
