@@ -76,20 +76,32 @@ import { useEffect, useRef, useState } from "react";
 const testimonials = [
   {
     name: "Aryan Bansal",
-    text: `Grace Aesthetic transformed our new home into a peaceful, nature inspired space. Every detail feels thoughtfully designed, blending modern elegance with natural beauty. The result is a home that feels calm, fresh, and truly welcoming.`,
+    text: `We never thought a home could feel this peaceful. Grace Aesthetic took our new house and turned it into something that genuinely feels like a breath of fresh air. Modern, elegant, and deeply connected to nature. Every corner feels intentional. We walk in and instantly exhale.`,
   },
   {
     name: "Isha Malhotra",
-    text: `The team did an incredible job bringing our vision of a serene and beautiful home to life. The design feels open, airy, and connected to nature, while still maintaining a premium and modern touch. Their work reflects both creativity and precision.`
+    text: `We had a vision in our heads but couldn't quite put it into words. Grace Aesthetic understood it anyway. The result is a home that feels open, light-filled, and alive, without losing that premium, polished finish. Honestly, it exceeded what we imagined.`
   },
   {
     name: "Nikhil Sharma",
-    text: `We wanted a home that feels relaxing and close to nature, and Grace Aesthetic delivered beyond expectations. The balance of simplicity, natural elements, and refined design makes every space feel warm and harmonious.`
+    text: `We told them we wanted to feel close to nature without sacrificing style. They nailed it. There's this beautiful balance between simplicity and warmth that makes every room feel like a place you actually want to stay in. No clutter, no chaos. Just calm.`
   },
   {
     name: "Ananya Kapoor",
-    text: `From concept to execution, Grace Aesthetic created a home that feels like a perfect blend of beauty and comfort. The design is minimal yet impactful, with a strong focus on natural aesthetics and peaceful living. Truly exceptional work.`
+    text: `From the very first conversation to the final reveal, Grace Aesthetic was thoughtful, precise, and genuinely creative. The design is minimal but it makes a statement. It's the kind of home that guests walk into and immediately ask, who did this?`
   },
+
+
+
+
+
+
+  
+
+
+
+
+
 ];
 
 
