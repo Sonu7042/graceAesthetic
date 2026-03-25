@@ -1,13 +1,15 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { Instagram, Facebook, Linkedin, Youtube, CheckCircle2 } from "lucide-react";
+import { Instagram, Facebook, Linkedin, Youtube, CheckCircle2, Mail, Phone } from "lucide-react";
 import logograce from "../assets/gracefooter.png";
-import logoisd from "../assets/Ishaadriifooter.png";
+// import logoisd from "../assets/Ishaadriifooter.png";
+import logoisd from "../assets/footer_logo.png";
+import { IoLogoWhatsapp } from "react-icons/io5";
 
 const Footer = () => {
   const location = useLocation();
-  const isIshaadriPage = location.pathname === "/projects";
+  const isIshaadriPage = location.pathname === "/projects/upcoming/ishaadrii";
   const currentLogo = isIshaadriPage ? logoisd : logograce;
 
   const [formData, setFormData] = useState({
@@ -77,21 +79,31 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#f3f1eb] text-luxury-dark">
+    <footer className="bg-[#f3f1eb] text-luxury-dark relative">
 
       {/* TOP SECTION */}
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8 flex pb-6 pt-10 flex-col lg:flex-row items-center lg:items-start justify-between gap-10 lg:gap-16">
 
         {/* LOGO */}
-        <div className="flex items-center justify-center lg:justify-center w-full lg:w-1/2">
-        <Link to="/">
-          <img
-            src={currentLogo}
-            alt="Logo"
-            className="max-w-[200px] sm:max-w-[240px] md:max-w-[260px]"
-          />
-        </Link>
+        {/* <div className="flex items-center justify-center lg:justify-center w-full lg:w-1/2">
+          <Link to="/">
+            <img
+              src={currentLogo}
+              alt="Logo"
+              className="max-w-[200px] sm:max-w-[240px] md:max-w-[260px]"
+            />
+          </Link>
+        </div> */}
+        <div className="flex items-center gap-4 justify-center flex-col w-full lg:w-1/2">
+          <Link to="/">
+            <img
+              src={currentLogo}
+              alt="Logo"
+              className="max-w-full md:max-w-[260px] transition-all duration-500"
+            />
+          </Link>
         </div>
+
 
         {/* FORM or THANK YOU */}
         {isSuccess ? (
@@ -172,13 +184,15 @@ const Footer = () => {
               href="https://mail.google.com/mail/?view=cm&fs=1&to=graceaestheticofficial@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="block hover:text-black"
+              className="flex items-center gap-2 hover:text-black"
             >
-             <span className="font-bold">Email:</span>graceaestheticofficial@gmail.com
+              <Mail size={16} className="shrink-0" />
+              <span> graceaestheticofficial@gmail.com</span>
             </a>
 
-            <a href="tel:+919667376123" className="block hover:text-black">
-             <span className="font-bold"> Call/WhatsApp:</span> +919667376123
+            <a href="tel:+919667376123" className="flex items-center gap-2 hover:text-black">
+              <Phone size={16} className="shrink-0" />
+              <span> +919667376123</span>
             </a>
           </div>
           <div className="flex items-center gap-4 mt-6">
@@ -194,7 +208,7 @@ const Footer = () => {
             <a href="https://www.youtube.com/@graceaestheticofficial" target="_blank" rel="noopener noreferrer" className="text-luxury-dark/70 hover:text-black hover:scale-110 transition-transform">
               <Youtube size={20} strokeWidth={1.5} />
             </a>
-          </div> 
+          </div>
         </div>
 
         {/* ADDRESS */}
@@ -221,7 +235,7 @@ const Footer = () => {
             { name: "Home", path: "/" },
             { name: "About", path: "/about" },
             { name: "Blogs", path: "/blog" },
-            { name: "Projects", path: "/projects" },
+            // { name: "Contact", path: "/contact" },
           ].map((item) => (
             <Link
               key={item.name}
@@ -234,6 +248,25 @@ const Footer = () => {
         </div>
       </div>
 
+
+      <a
+        href="https://wa.me/919667376123"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute bottom-6 right-6 lg:bottom-10 lg:right-10 z-50 bg-[#25D366] text-white  rounded-full p-[4px] hover:scale-110 transition-transform flex items-center justify-center cursor-pointer"
+        aria-label="Chat on WhatsApp"
+      >
+
+        <IoLogoWhatsapp size={40} />
+
+        {/* <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+          className="w-8 h-8 fill-current"
+        >
+          <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 413.6c-33.6 0-66.4-8.9-95.4-25.8l-6.8-4-71 18.6 18.9-69.2-4.4-7C46.8 293.7 37 259 37 222c0-103.1 84-187 187.1-187 50 0 97 19.5 132.3 54.9 35.4 35.4 54.8 82.3 54.8 132.3 0 103.2-83.9 187.1-187 187.1zm102.6-140.2c-5.6-2.8-33.3-16.4-38.5-18.3-5.2-1.9-9-2.8-12.8 2.8-3.7 5.6-14.6 18.3-17.9 22-3.3 3.8-6.6 4.2-12.2 1.4-5.6-2.8-23.8-8.8-45.3-27.9-16.7-14.9-28-33.4-31.3-39-3.3-5.6-.3-8.6 2.5-11.4 2.5-2.5 5.6-6.6 8.4-9.9 2.8-3.3 3.8-5.6 5.6-9.4 1.9-3.8.9-7-.5-9.9-1.4-2.8-12.8-30.9-17.5-42.3-4.6-11.1-9.2-9.6-12.8-9.8-3.3-.2-7-.2-10.8-.2-3.8 0-9.9 1.4-15 7-5.2 5.6-19.8 19.3-19.8 47.1 0 27.8 20.3 54.6 23.1 58.4 2.8 3.8 39.8 60.8 96.3 85.2 13.4 5.8 23.9 9.3 32 11.9 13.5 4.3 25.8 3.7 35.5 2.2 10.9-1.6 33.3-13.6 38-26.8 4.7-13.2 4.7-24.4 3.3-26.8-1.5-2.3-5.2-3.7-10.8-6.5z"/>
+        </svg> */}
+      </a>
       {/* BOTTOM */}
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8 pb-4 mt-6 flex flex-col md:flex-row items-center justify-start gap-4 text-xs text-luxury-dark/60">
         <p>© 2026 Grace Aesthetic</p>

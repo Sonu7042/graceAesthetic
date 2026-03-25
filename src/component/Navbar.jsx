@@ -3,8 +3,10 @@ import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 import ContactPopup from "./ContactPopup";
-import logograce from "../assets/graceheader.png";
-import logoisd from "../assets/Ishaadriiheader.png";
+// import logograce from "../assets/graceheader.png";
+// import logoisd from "../assets/Ishaadriiheader.png";
+import logograce from "../assets/GraceAesthetic.svg";
+import logoisd from "../assets/Ishaadrii.svg";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -15,7 +17,7 @@ const Navbar = () => {
 
   const location = useLocation();
 
-  const isIshaadriPage = location.pathname === "/projects";
+  const isIshaadriPage = location.pathname === "/projects/upcoming/ishaadrii";
   const currentLogo = isIshaadriPage ? logoisd : logograce;
 
   useEffect(() => {
@@ -45,21 +47,20 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed w-full z-50 transition-all text-primary duration-500 backdrop-blur-lg ${showNav ? "translate-y-0" : "-translate-y-full"
-          } ${isScrolled ? "bg-black/50" : "bg-transparent"}`}
+        className="fixed top-0 w-full z-50 transition-all text-primary duration-500 bg-[#f8f8f5] "
       >
         <div className="container-custom flex justify-between items-center mx-auto px-4">
           <Link to="/">
             <img
               src={currentLogo}
-              className="w-32 object-contain"
+              className="w-32 md:w-40 h-17  object-contain"
               alt="Logo"
             />
-          </Link>    
+          </Link>
 
           {/* DESKTOP MENU */}
           <div className="hidden md:flex space-x-10 items-center">
- 
+
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -77,19 +78,19 @@ const Navbar = () => {
               </div>
 
               {/* FIRST LEVEL */}
-              <div className="absolute top-full left-0 mt-7 w-56 backdrop-blur-lg bg-black/50 text-primary rounded-xs shadow-xl opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300">
+              <div className="absolute top-full left-0 mt-7 w-56 backdrop-blur-lg bg-white/90 text-primary rounded-xs shadow-xl opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300">
 
                 {/* Delivered */}
                 <div className="relative group/delivered">
-                  <div className="px-4 py-3 text-white text-xs uppercase tracking-widest hover:bg-white/10 cursor-pointer flex justify-between items-center group-hover/delivered:text-white">
+                  <div className="px-4 py-3 text-primary text-xs uppercase tracking-widest hover:bg-white/10 cursor-pointer flex justify-between items-center">
                     Delivered
                   </div>
 
                   {/* SECOND LEVEL */}
-                  <div className="max-h-0 text-white overflow-hidden group-hover/delivered:max-h-40 transition-all duration-500 ease-in-out bg-black/20 backdrop-blur-lg">
+                  <div className="max-h-0 text-primary overflow-hidden group-hover/delivered:max-h-40 transition-all duration-500 ease-in-out bg-black/20 backdrop-blur-lg">
                     <Link
-                      to="/billora"
-                      className="block px-8 py-2 text-white text-xs uppercase tracking-widest text-primary/80 hover:text-primary hover:bg-white/10 transition"
+                      to="/projects/delivered/billora"
+                      className="block px-8 py-2 text-primary text-xs uppercase tracking-widest text-primary/80 hover:text-primary hover:bg-white/10 transition"
                     >
                       Billora
                     </Link>
@@ -97,16 +98,16 @@ const Navbar = () => {
                 </div>
 
                 {/* Upcoming */}
-                <div className="relative text-white group/upcoming border-t border-white/10">
-                  <div className="px-4 py-3 text-xs uppercase tracking-widest hover:bg-white/10 cursor-pointer flex justify-between items-center group-hover/upcoming:text-white">
+                <div className="relative text-primary group/upcoming border-t border-white/10">
+                  <div className="px-4 py-3 text-xs uppercase tracking-widest hover:bg-white/10 cursor-pointer flex justify-between items-center ">
                     Upcoming
                   </div>
 
                   {/* SECOND LEVEL */}
                   <div className="max-h-0 rounded-xs overflow-hidden group-hover/upcoming:max-h-60 transition-all duration-500 ease-in-out bg-black/20 backdrop-blur-lg">
                     <Link
-                      to="/projects"
-                      className="block px-8 text-white py-2 text-xs uppercase tracking-widest text-primary/80 hover:text-primary hover:bg-white/10 transition"
+                      to="/projects/upcoming/ishaadrii"
+                      className="block px-8 text-primary py-2 text-xs uppercase tracking-widest text-primary/80 hover:text-primary hover:bg-white/10 transition"
                     >
                       Ishaadrii
                     </Link>
@@ -183,7 +184,7 @@ const Navbar = () => {
                       Delivered <span className="text-[8px] group-open/mobile-delivered:rotate-180 transition-transform">▼</span>
                     </summary>
                     <div className="pl-4 mt-3 space-y-3 border-l border-white/10 ml-1">
-                      <Link to="/billora" onClick={() => setMobileMenuOpen(false)} className="block text-xs uppercase tracking-widest text-primary/70">Billora</Link>
+                      <Link to="/projects/delivered/billora" onClick={() => setMobileMenuOpen(false)} className="block text-xs uppercase tracking-widest text-primary/70">Billora</Link>
                     </div>
                   </details>
 
@@ -193,7 +194,7 @@ const Navbar = () => {
                       Upcoming <span className="text-[8px] group-open/mobile-upcoming:rotate-180 transition-transform">▼</span>
                     </summary>
                     <div className="pl-4 mt-3 space-y-3 border-l border-white/10 ml-1">
-                      <Link to="/projects" onClick={() => setMobileMenuOpen(false)} className="block text-xs uppercase tracking-widest text-primary/70">Ishaadrii</Link>
+                      <Link to="/projects/upcoming/ishaadrii" onClick={() => setMobileMenuOpen(false)} className="block text-xs uppercase tracking-widest text-primary/70">Ishaadrii</Link>
                       {/* <Link to="#" onClick={() => setMobileMenuOpen(false)} className="block text-xs uppercase tracking-widest text-primary/70">Project2</Link>
                       <Link to="#" onClick={() => setMobileMenuOpen(false)} className="block text-xs uppercase tracking-widest text-primary/70">Project3</Link>
                       <Link to="#" onClick={() => setMobileMenuOpen(false)} className="block text-xs uppercase tracking-widest text-primary/70">Project4</Link> */}

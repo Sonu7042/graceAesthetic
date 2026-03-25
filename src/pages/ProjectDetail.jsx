@@ -135,6 +135,7 @@ const ProjectDetail = () => {
                             md:tracking-[1.6rem] 
                             lg:tracking-[2.25rem] 
                             text-xl 
+                            mb-4
                             sm:text-2xl 
                             md:text-3xl 
                             lg:text-[40px] 
@@ -147,11 +148,11 @@ const ProjectDetail = () => {
                             sm:text-2xl 
                             md:text-3xl 
                             lg:text-[22px] 
-                            text-gray-500 uppercase text-center xl:mb-12">
+                            text-gray-500 uppercase text-center mb-4 xl:mb-12">
                             A Beautiful Second Home
                         </p>
 
-                        <p className=" text-justify text-base md:text-2xl lg:text-[18px] font-serif text-luxury-dark/80 ">
+                        <p className=" text-base text-center md:text-2xl lg:text-[18px] font-serif text-luxury-dark/80 ">
                             Crafted for those who crave space, silence, and a slower pace, ISHAADRII brings modern living into perfect harmony with Uttarakhand’s serene beauty. Open spaces, natural light, and thoughtful design come together to create a balanced, elegant lifestyle where comfort meets nature every day.
                         </p>
                         {/* <p className=" text-justify text-base md:text-2xl lg:text-[18px] font-serif text-luxury-dark/80 ">
