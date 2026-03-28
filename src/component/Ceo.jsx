@@ -46,7 +46,7 @@ const leaderSections = [
     image: ceoHead,
     reverse: true
   },
-];
+];  
 
 const Section = ({ section, index }) => {
   const sectionRef = useRef(null);
