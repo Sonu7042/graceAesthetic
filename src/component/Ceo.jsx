@@ -12,7 +12,7 @@ const leaderSections = [
     title: "Mrs. Pratibha Thakran",
     description: [
       "With over 21 years of entrepreneurial experience, Mrs. Pratibha Thakran brings strong operational expertise and business leadership to the real estate space. As co-proprietor of a well-established pharmaceutical company, she has built and managed efficient systems while driving consistent growth.",
-      "She is also the force behind the successful development of TerraTrek Billora, a premium resort in Jim Corbett featuring a rooftop restaurant and modern amenities. Her ability to execute high-quality projects reflects her commitment to excellence, transparency, and delivering long-term value in every real estate venture."
+      "Her ability to execute high-quality projects reflects her commitment to excellence, transparency, and delivering long-term value in every real estate venture."
     ],
     image: ceoHead3,
     reverse: false
@@ -32,7 +32,7 @@ const leaderSections = [
     title: "Mr. Pardeep Kumar",
     description: [
       "Mr. Pradeep Kumar brings extensive business management experience and a strong focus on operational excellence. As co-proprietor of a successful pharmaceutical enterprise, he has played a key role in building and scaling a stable, high-performing organization.",
-      "He has also contributed to the development of TerraTrek Billora, a well-crafted resort in Jim Corbett known for its quality and thoughtful design. His structured approach and attention to detail ensure reliable execution and a seamless experience for clients across real estate projects."
+      "His structured approach and attention to detail ensure reliable execution and a seamless experience for clients across real estate projects."
     ],
     image: ceoHead4,
     reverse: false
