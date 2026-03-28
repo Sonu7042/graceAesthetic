@@ -9,16 +9,17 @@ import ceoHead4 from "../assets/ownerimg/grace_pradeep_New.jpg";
 const leaderSections = [
   {
     tag: "Founder and Chairman",   
-    title: "Ms. Pratibha Thakran",
+    title: "Mrs. Pratibha Thakran",
     description: [
-      // "With over 13 years of diversified experience across Sales, Marketing, SaaS, and Logistics, Ms. Pratibha Thakran brings a wealth of knowledge and expertise to the real estate industry. Having worked with leading organizations such as Zomato, Loconav, Signature Global, and Bata, she has successfully built a career defined by strategic growth, client-centric solutions, and operational excellence."
+      "With over 21 years of entrepreneurial experience, Mrs. Pratibha Thakran brings strong operational expertise and business leadership to the real estate space. As co-proprietor of a well-established pharmaceutical company, she has built and managed efficient systems while driving consistent growth.",
+      "She is also the force behind the successful development of TerraTrek Billora, a premium resort in Jim Corbett featuring a rooftop restaurant and modern amenities. Her ability to execute high-quality projects reflects her commitment to excellence, transparency, and delivering long-term value in every real estate venture."
     ],
     image: ceoHead3,
     reverse: false
   },
   {
     tag: "Co Founder and Co chairman",
-    title: "Ms. Neeru Tomar",
+    title: "Mrs. Neeru Tomar",
     description: [
       "With 19 years of experience in Sales, E-Commerce, and Operations, Mrs. Neeru Tomar has worked with global brands like American Express, Citi Group, Aon Hewitt, and Koziva UK. She drives operational efficiency, revenue growth, and customer excellence by combining strategic insight with proven best practices to build sustainable, high-performing businesses."
     ],
@@ -30,7 +31,8 @@ const leaderSections = [
     tag: "COO",
     title: "Mr. Pardeep Kumar",
     description: [
-      // "A highly experienced professional in the real estate development sector, with strong expertise in managing end-to-end operations, large-scale project execution, and strategic business growth. Known for driving efficiency and ensuring timely delivery of projects, he has successfully led cross-functional teams, optimized resources, and built strong client relationships. With deep industry knowledge and a results-oriented approach, he has consistently contributed to organizational growth, operational excellence, and enhanced customer satisfaction."
+      "Mr. Pradeep Kumar brings extensive business management experience and a strong focus on operational excellence. As co-proprietor of a successful pharmaceutical enterprise, he has played a key role in building and scaling a stable, high-performing organization.",
+      "He has also contributed to the development of TerraTrek Billora, a well-crafted resort in Jim Corbett known for its quality and thoughtful design. His structured approach and attention to detail ensure reliable execution and a seamless experience for clients across real estate projects."
     ],
     image: ceoHead4,
     reverse: false
